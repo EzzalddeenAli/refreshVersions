@@ -9,7 +9,7 @@
         <meta name="description" content="Life is too short to google for dependencies and versions">
       
       
-        <link rel="canonical" href="https://jmfayard.github.io/rvdev/CONTRIBUTING/">
+        <link rel="canonical" href="https://jmfayard.github.io/refreshVersions/CONTRIBUTING/">
       
       
         <meta name="author" content="jmfayard LouisCAD">
@@ -19,7 +19,7 @@
     
     
       
-        <title>CONTRIBUTING - gradle refreshVersions</title>
+        <title>Contributing guidelines - gradle refreshVersions</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#contributing" class="md-skip">
+        <a href="#contributing-guidelines" class="md-skip">
           Skip to content
         </a>
       
@@ -79,7 +79,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://jmfayard.github.io/rvdev/" title="gradle refreshVersions" class="md-header-nav__button md-logo" aria-label="gradle refreshVersions">
+    <a href="https://jmfayard.github.io/refreshVersions/" title="gradle refreshVersions" class="md-header-nav__button md-logo" aria-label="gradle refreshVersions">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -96,7 +96,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              CONTRIBUTING
+              Contributing guidelines
             
           </span>
         </div>
@@ -164,7 +164,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://jmfayard.github.io/rvdev/" title="gradle refreshVersions" class="md-nav__button md-logo" aria-label="gradle refreshVersions">
+    <a href="https://jmfayard.github.io/refreshVersions/" title="gradle refreshVersions" class="md-nav__button md-logo" aria-label="gradle refreshVersions">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -360,6 +360,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -368,62 +370,79 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#contributing" class="md-nav__link">
-    Contributing
+  <a href="#we-discuss-before-we-code" class="md-nav__link">
+    We discuss before we code
   </a>
-  
-    <nav class="md-nav" aria-label="Contributing">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#before-you-start" class="md-nav__link">
-    Before you start
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#writing-a-gradle-plugin" class="md-nav__link">
-    Writing a Gradle plugin
+  <a href="#we-report-issues-properly" class="md-nav__link">
+    We report issues properly
   </a>
-  
-    <nav class="md-nav" aria-label="Writing a Gradle plugin">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#workflow-for-this-project" class="md-nav__link">
-    Workflow for this project
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tasks" class="md-nav__link">
-    Tasks
-  </a>
-  
-    <nav class="md-nav" aria-label="Tasks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#publishing-the-plugin-locally" class="md-nav__link">
-    Publishing the plugin locally
+  <a href="#we-have-a-code-of-conduct" class="md-nav__link">
+    We have a code of conduct
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-open-the-project-in-intellij-idea" class="md-nav__link">
+    How to open the project in IntelliJ IDEA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publishtomavenlocal-publishes-the-plugin-locally" class="md-nav__link">
+    publishToMavenLocal publishes the plugin locally
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checksamplessh-test-that-the-samples-are-working" class="md-nav__link">
+    checkSamples.sh test that the samples are working
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-we-test-the-plugin-in-other-projects" class="md-nav__link">
+    How we test the plugin in other projects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-we-contribute-new-dependency-notations" class="md-nav__link">
+    How we contribute new dependency notations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-we-update-the-documentation" class="md-nav__link">
+    How we update the documentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-develop-a-gradle-plugin" class="md-nav__link">
+    How to develop a Gradle plugin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#our-checklist-before-merging-a-pull-request" class="md-nav__link">
+    Our checklist before merging a pull-request
+  </a>
   
 </li>
       
@@ -444,70 +463,61 @@
                   </a>
                 
                 
-                  <h1>CONTRIBUTING</h1>
-                
-                <h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h2>
-<p>Thank you for considering a contribution! </p>
+                <h1 id="contributing-guidelines">Contributing guidelines<a class="headerlink" href="#contributing-guidelines" title="Permanent link">&para;</a></h1>
+<p>Thank you for considering a contribution!</p>
 <p>This guide explains how to:</p>
 <ul>
 <li>maximize the chance of your changes being accepted</li>
 <li>find the documentation to work on a Gradle plugin</li>
 <li>work on the code base and test your changes</li>
 </ul>
-<h3 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Check out the parent plugin: <a href="https://github.com/ben-manes/gradle-versions-plugin">ben-manes/gradle-versions-plugin</a>. Your feature request or bug report may be better adressed at this level.</li>
-<li>Check out the <a href="https://github.com/jmfayard/buildSrcVersions/issues">existing issues</a>. </li>
-<li>Explain your use case and start the discussion before your submit a pull-request</li>
-</ul>
-<h2 id="writing-a-gradle-plugin">Writing a Gradle plugin<a class="headerlink" href="#writing-a-gradle-plugin" title="Permanent link">&para;</a></h2>
+<h2 id="we-discuss-before-we-code">We discuss before we code<a class="headerlink" href="#we-discuss-before-we-code" title="Permanent link">&para;</a></h2>
+<p>Please don&rsquo;t spend hours implementing a feature and then submit a pull-request that we may not be able to accept.</p>
+<p>Instead <a href="https://github.com/jmfayard/refreshVersions/discussions">start a discussion</a> to gather early feedback from us. That will save both your time and ours.</p>
+<h2 id="we-report-issues-properly">We report issues properly<a class="headerlink" href="#we-report-issues-properly" title="Permanent link">&para;</a></h2>
+<p>TK: use the playground or the samples instead of your private project</p>
+<p>TK: give us a build scan URL</p>
+<h2 id="we-have-a-code-of-conduct">We have a code of conduct<a class="headerlink" href="#we-have-a-code-of-conduct" title="Permanent link">&para;</a></h2>
+<p>Whenever you are about to post or commit, ask yourself &ldquo;Would an idiot do that?&rdquo;</p>
+<p>And if they would, do not do that thing.</p>
+<p><a href="https://youtu.be/KFwUcEwD4l4">https://youtu.be/KFwUcEwD4l4</a></p>
+<p><a href="https://youtu.be/KFwUcEwD4l4"><img alt="" src="http://www.theofficequotes.com/screenshots/84521e6a7a4ea0cf2057070b8fa200ba.jpg" /></a></p>
+<hr />
+<p>Q: What about breathing?</p>
+<p>A: The behavior must be exclusive to idiocy.</p>
+<h2 id="how-to-open-the-project-in-intellij-idea">How to open the project in IntelliJ IDEA<a class="headerlink" href="#how-to-open-the-project-in-intellij-idea" title="Permanent link">&para;</a></h2>
+<p>We recommend using the most recent version of IntelliJ IDEA to contribute to this project (consider 2020.2 or newer).</p>
+<p>Import the &ldquo;plugins&rdquo; Gradle project</p>
+<ol>
+<li>Locate the <code>plugins/settings.gradle.kts</code> file in the &ldquo;Project&rdquo; tool window.</li>
+<li>Right-click on it to open the contextual menu.</li>
+<li>Select &ldquo;Import Gradle Project&rdquo;.</li>
+</ol>
+<p>TK: the fix-ide.sh script</p>
+<h2 id="publishtomavenlocal-publishes-the-plugin-locally"><code>publishToMavenLocal</code> publishes the plugin locally<a class="headerlink" href="#publishtomavenlocal-publishes-the-plugin-locally" title="Permanent link">&para;</a></h2>
+<p>This step is required for the samples to work afterwards and enable you to test your changes.</p>
+<ol>
+<li>Checks that the <code>plugins/version.txt</code> file contains a version ending with <code>-LOCAL-SNAPSHOT</code> to avoid overlapping a published version.</li>
+<li>In the &ldquo;Gradle&rdquo; tool window, or from the terminal, run the <code>publishToMavenLocal</code> task.</li>
+</ol>
+<h2 id="checksamplessh-test-that-the-samples-are-working"><code>checkSamples.sh</code> test that the samples are working<a class="headerlink" href="#checksamplessh-test-that-the-samples-are-working" title="Permanent link">&para;</a></h2>
+<p>TK</p>
+<h2 id="how-we-test-the-plugin-in-other-projects">How we test the plugin in other projects<a class="headerlink" href="#how-we-test-the-plugin-in-other-projects" title="Permanent link">&para;</a></h2>
+<p>The samples are useful to test quickly how the plugin behaves, but sometimes it&rsquo;s best to test it into a real project.</p>
+<p>TK</p>
+<h2 id="how-we-contribute-new-dependency-notations">How we contribute new dependency notations<a class="headerlink" href="#how-we-contribute-new-dependency-notations" title="Permanent link">&para;</a></h2>
+<p>TK we don&rsquo;t at the moment</p>
+<h2 id="how-we-update-the-documentation">How we update the documentation<a class="headerlink" href="#how-we-update-the-documentation" title="Permanent link">&para;</a></h2>
+<p>TK</p>
+<h2 id="how-to-develop-a-gradle-plugin">How to develop a Gradle plugin<a class="headerlink" href="#how-to-develop-a-gradle-plugin" title="Permanent link">&para;</a></h2>
 <p>If you have never worked on a Gradle plugin before, have a glimpse at the following guides</p>
 <ul>
 <li><a href="https://guides.gradle.org/designing-gradle-plugins/">Designing Gradle plugins</a></li>
 <li><a href="https://guides.gradle.org/implementing-gradle-plugins/">Implementing Gradle plugins</a></li>
 <li><a href="https://guides.gradle.org/testing-gradle-plugins/">Testing Gradle plugins</a></li>
 </ul>
-<p><a href="https://github.com/gradle-guides/gradle-site-plugin">https://github.com/gradle-guides/gradle-site-plugin</a> is a wonderful Gradle plugin sample demonstrating established techniques and practices for plugin development as described in the following guides:</p>
-<h3 id="workflow-for-this-project">Workflow for this project<a class="headerlink" href="#workflow-for-this-project" title="Permanent link">&para;</a></h3>
-<p>Start IntelliJ IDEA 2018.3+  </p>
-<p>Open in IntelliJ the project from the folder <code>composite</code> (composite/build.gradle). </p>
-<p>From the <code>Gradle</code> tool window, run the tasks <code>checkAll</code> </p>
-<p><img alt="image" src="https://user-images.githubusercontent.com/459464/51464714-8662c380-1d66-11e9-87f7-2ac45d4ff620.png" /></p>
-<h2 id="tasks">Tasks<a class="headerlink" href="#tasks" title="Permanent link">&para;</a></h2>
-<p>The <code>composite</code> module defines a number of custom tasks to simplify the workflow</p>
-<div class="highlight"><pre><span></span><code>$ pwd
-buildSrcVersions/composite   
-
-$ ./gradlew tasks --group=custom -q
-Custom tasks
-------------
-checkAll - Run all checks
-hello - Minimal task that do nothing. Useful to debug a failing build
-pluginTests - Run plugin unit tests
-publishLocally - Publish the plugin locally
-publishPlugins - Publishes this plugin to the Gradle Plugin portal.
-updateGradle - Update Gradle in all modules
-wrapper - Update Gradle with ./gradlew wrapper
-</code></pre></div>
-<h3 id="publishing-the-plugin-locally">Publishing the plugin locally<a class="headerlink" href="#publishing-the-plugin-locally" title="Permanent link">&para;</a></h3>
-<p>The samples are useful to test quickly how the plugin behaves, but sometimes it&rsquo;s best to test it into a real project. </p>
-<p>This is as easy as editing your <code>Settings</code>:</p>
-<div class="highlight"><pre><span></span><code>// MY_PROJECT/settings.gradle(.kts)
-pluginManagement {
-    repositories {
-        mavenLocal()
-        gradlePluginPortal()
-    }
-}
-//rootProject.name = &quot;MY_PROJECT&quot;
-</code></pre></div>
-<p>The workflow is then:</p>
-<ul>
-<li>change something inside the plugin</li>
-<li>Run either the task <code>:publishLocally</code> from <code>composite</code></li>
-<li>&hellip; or the task <code>:publishToMavenLocal</code> from <code>plugin</code></li>
-<li>Then run <code>:refreshVersions</code> or <code>:buildSrcVersions</code> inside <code>MY_PROJECT</code></li>
-</ul>
+<h2 id="our-checklist-before-merging-a-pull-request">Our checklist before merging a pull-request<a class="headerlink" href="#our-checklist-before-merging-a-pull-request" title="Permanent link">&para;</a></h2>
+<p>TK</p>
                 
               
               

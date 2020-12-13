@@ -9,7 +9,7 @@
         <meta name="description" content="Life is too short to google for dependencies and versions">
       
       
-        <link rel="canonical" href="https://jmfayard.github.io/rvdev/setup/">
+        <link rel="canonical" href="https://jmfayard.github.io/refreshVersions/setup/">
       
       
         <meta name="author" content="jmfayard LouisCAD">
@@ -79,7 +79,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://jmfayard.github.io/rvdev/" title="gradle refreshVersions" class="md-header-nav__button md-logo" aria-label="gradle refreshVersions">
+    <a href="https://jmfayard.github.io/refreshVersions/" title="gradle refreshVersions" class="md-header-nav__button md-logo" aria-label="gradle refreshVersions">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -164,7 +164,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://jmfayard.github.io/rvdev/" title="gradle refreshVersions" class="md-nav__button md-logo" aria-label="gradle refreshVersions">
+    <a href="https://jmfayard.github.io/refreshVersions/" title="gradle refreshVersions" class="md-nav__button md-logo" aria-label="gradle refreshVersions">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -550,7 +550,13 @@ features, and faster builds.</p>
 <p>Run this command to update:</p>
 <div class="highlight"><pre><span></span><code>./gradlew wrapper --gradle-version <span class="m">6</span>.7
 </code></pre></div>
-<p>Note that for Android projects, you need to update the Android Gradle Plugin to its latest stable version at the same time.</p>
+<p>You should also try to update the Gradle plugins present in your build to the latest version. For example on an Android project, do update the version of the Gradle Android Plugin.</p>
+<p>The Gradle documentation has detailed migration guide if you are stuck:</p>
+<ul>
+<li>From Gradle 6+: <a href="https://docs.gradle.org/current/userguide/upgrading_version_6.html">https://docs.gradle.org/current/userguide/upgrading_version_6.html</a></li>
+<li>From Gradle 5.x: <a href="https://docs.gradle.org/current/userguide/upgrading_version_5.html">https://docs.gradle.org/current/userguide/upgrading_version_5.html</a></li>
+<li>From Gradle 4.x: <a href="https://docs.gradle.org/current/userguide/upgrading_version_4.html">https://docs.gradle.org/current/userguide/upgrading_version_4.html</a></li>
+</ul>
 <h2 id="about-gradles-settings-file">About Gradle&rsquo;s Settings file<a class="headerlink" href="#about-gradles-settings-file" title="Permanent link">&para;</a></h2>
 <p>For refreshVersions to be able to work for all the dependencies in your project, including for the ones in the <code>buildscript</code>&lsquo;s <code>classpath</code>, it needs to be setup in the Gradle settings.</p>
 <p>A Gradle project has <a href="https://docs.gradle.org/current/userguide/build_lifecycle.html#sec:settings_file">a Settings file</a> called <code>settings.gradle</code>  or <code>settings.gradle.kts</code> where you must respect a certain order (otherwise, the build breaks).</p>
